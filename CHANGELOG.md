@@ -1,5 +1,9 @@
 # Änderungen
 
+## 0.9.1
+
+- Behoben: Das Programm stürzte beim Start ab, wenn der Dateiname der AppImage mit Umlauten oder „ß“ begann (zum Beispiel nach dem Einbinden mit Gear Lever als „aufmaßwerk.appimage“).
+
 ## 0.9.0
 
 Erste öffentliche Fassung unter dem Namen Aufmaßwerk.

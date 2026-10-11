@@ -22,7 +22,7 @@ from PySide6.QtWidgets import (
 
 APP_NAME = "Aufmaßwerk"
 APP_SUBTITLE = "das Programm fürs Handwerk"
-APP_VERSION = "0.9.0"
+APP_VERSION = "0.9.1"
 # Das Programm hieß früher Aufmaßwerk. Wer es schon benutzt, behält seine Ordner;
 # neue Installationen verwenden „Aufmasswerk“.
 def _app_folder(base, new_name, old_name):

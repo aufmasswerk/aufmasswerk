@@ -1,5 +1,23 @@
 #!/bin/sh
 APPDIR="$(dirname "$(readlink -f "$0")")"
+# Die AppImage-Laufzeit bildet den Einhängeordner aus den ersten Zeichen des Dateinamens.
+# Beginnt der Name mit Umlauten oder „ß“ (z. B. „aufmaßwerk.appimage“), kann das Zeichen
+# mittendrin abgeschnitten werden; der Pfad ist dann kein gültiges UTF-8 und Python/Qt
+# stürzen ab. In diesem Fall die AppImage einmal über einen Verweis mit schlichtem Namen
+# neu starten – dann entsteht ein sauberer Einhängeordner.
+case "$APPDIR" in
+  *[!A-Za-z0-9/._-]*)
+    if [ -n "$APPIMAGE" ] && [ -z "$AUFMASSWERK_NEUSTART" ]; then
+      HILF="$(mktemp -d "${TMPDIR:-/tmp}/aufmasswerk-XXXXXX")" && ln -s "$APPIMAGE" "$HILF/aufmasswerk.AppImage" && {
+        trap 'rm -rf "$HILF"; exit 143' INT TERM HUP
+        AUFMASSWERK_NEUSTART=1 AUFMASSWERK_APPIMAGE="$APPIMAGE" "$HILF/aufmasswerk.AppImage" "$@"
+        status=$?; rm -rf "$HILF"; exit $status
+      }
+    fi ;;
+esac
+# Nach einem solchen Neustart wieder auf die eigentliche Datei zeigen (z. B. für „Programm neu starten“).
+[ -n "$AUFMASSWERK_APPIMAGE" ] && export APPIMAGE="$AUFMASSWERK_APPIMAGE"
+unset AUFMASSWERK_NEUSTART AUFMASSWERK_APPIMAGE
 PYTHON_VERSION=3.10
 export LD_LIBRARY_PATH="$APPDIR/usr/lib:$APPDIR/usr/lib/x86_64-linux-gnu:$APPDIR/usr/lib/python${PYTHON_VERSION}/site-packages/PySide6/Qt/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
 export PYTHONHOME="$APPDIR/usr"
