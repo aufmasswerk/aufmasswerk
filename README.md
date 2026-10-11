@@ -68,9 +68,18 @@ Wie die AppImage gebaut wird, steht in [packaging/README.md](packaging/README.md
 
 ## Zum Quelltext
 
-Das Programm ist in Python mit PySide6 (Qt) geschrieben und steckt in einer einzigen Datei, `src/main.py`. Es ist von einem Handwerker zusammen mit KI-Assistenten (ChatGPT und Claude) entwickelt worden, nicht von einem Softwarehaus. Der Aufbau ist deshalb pragmatisch.
+Das Programm ist in Python mit PySide6 (Qt) geschrieben und steckt in einer einzigen Datei, `src/main.py`. Es ist von einem Handwerker zusammen mit KI-Assistenten entwickelt worden, nicht von einem Softwarehaus. Der Aufbau ist deshalb pragmatisch.
 
 Fehlerberichte und Verbesserungsvorschläge sind willkommen.
+
+## Mitwirkende
+
+Aufmaßwerk ist die Idee eines Handwerkers, der ein Programm für den eigenen Betrieb brauchte. Programmiert haben es zwei KI-Assistenten nach seinen Vorgaben:
+
+- **ChatGPT (OpenAI)** hat mit ihm das Programm von Grund auf entwickelt: Kunden, Projekte, Angebote, Aufmaß, Rechnungen, Zahlungen und Mahnungen.
+- **Claude (Anthropic)** hat es später überarbeitet und erweitert: vereinfachte Bedienung, Eingangsrechnungen, E-Rechnung, Datensicherung, Anleitung und Veröffentlichung.
+
+In der automatischen Liste „Contributors“ zeigt GitHub nur Mitwirkende mit einem GitHub-Konto. ChatGPT fehlt dort deshalb, obwohl sein Anteil am Programm groß ist.
 
 ## Lizenz
 
