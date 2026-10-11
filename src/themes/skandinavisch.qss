@@ -1,0 +1,71 @@
+QMainWindow,QWidget{background:#ffffff;color:#2f3b40;font-size:13px;font-family:"Inter","Noto Sans","DejaVu Sans",sans-serif}
+#nav{background:#7892a3;color:#ffffff;border:none;font-size:14px;padding:14px 10px}
+#nav::item{padding:13px 11px;margin:3px 0;border-radius:9px}
+#nav::item:hover{background:#8fa7b6}
+#nav::item:selected{background:#5f7f94;color:#ffffff;font-weight:600}
+#pageTitle {
+    font-size: 20px;      /* Deutlich kleiner und eleganter */
+    font-weight: 600;     /* Nicht mehr ganz so extrem fett */
+    color: #405f70;       /* Die Farbe bleibt wie sie ist */
+    padding: 3px 0 7px 0;
+}
+#paymentStat{font-size:14px;padding:11px 15px;background:#ffffff;border:1px solid #dbe3e7;border-radius:12px}
+#dashboardCard{border:1px solid #dbe3e7;border-radius:14px;background:#ffffff;margin-top:14px;padding:20px 12px 12px 12px}
+#dashboardCard::title{color:#5e727d;background:#ffffff}
+#dashboardValue{font-size:22px;font-weight:700;color:#4d6f82;padding:16px 8px;background:#ffffff}
+QGroupBox{font-weight:600;border:1px solid #dbe3e7;border-radius:11px;margin-top:16px;padding:18px 10px 10px 10px;background:#ffffff}
+QGroupBox::title{subcontrol-origin:margin;subcontrol-position:top left;left:12px;padding:0 7px;background:#ffffff;color:#526874}
+/* Sanft farblich hinterlegte Text-Buttons (jetzt deutlich flacher) */
+QPushButton {
+    background: #e8eef1;
+    border: none;
+    border-radius: 4px;  /* Ecken minimal weniger rund, passend zur flacheren Höhe */
+    padding: 2px 12px;   /* HIER ist die Magie: Nur noch 2 Pixel Luft nach oben und unten! */
+    color: #2b3d46;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background: #c3d2d9;
+    color: #1a252b;
+}
+
+QPushButton:pressed {
+    background: #b8c9d1;
+}
+
+/* Der Haupt-Knopf ("+ Neues Angebot") */
+QPushButton#ctaButton {
+    background: #344a55;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 3px 14px; /* Minimal mehr Platz, damit er als Hauptknopf ganz leicht hervorsticht */
+}
+
+QPushButton#ctaButton:hover {
+    background: #4a6775;
+}
+QToolButton{background:#ffffff;border:1px solid #c6d2d8;border-radius:5px;padding:2px}
+QToolButton:hover{background:#d8e3e8;border-color:#7893a1}
+QToolButton:pressed{background:#c5d5dc}
+QToolButton:disabled{background:#f6f7f7;border-color:#e1e6e8}
+QLineEdit,QTextEdit,QComboBox,QDoubleSpinBox,QSpinBox,QDateEdit{padding:7px 9px;background:#ffffff;border:1px solid #c9d4d9;border-radius:7px;selection-background-color:#aac0cc}
+QLineEdit:focus,QTextEdit:focus,QComboBox:focus,QDoubleSpinBox:focus,QSpinBox:focus,QDateEdit:focus{border:1px solid #7896a7}
+QTableWidget{background:#ffffff;alternate-background-color:#f8fafb;gridline-color:#e6ebed;border:1px solid #dbe3e7;border-radius:8px;selection-background-color:#dce8ed;selection-color:#304a57}
+QTableWidget::item{padding:7px 8px;border:none}
+QTableWidget::item:hover{background:#edf4f6}
+QHeaderView::section{background:#edf3f5;color:#405863;padding:5px 8px;font-weight:600;border:none;border-right:1px solid #dce5e9;border-bottom:1px solid #d2dde2}
+QSplitter::handle{background:#e7ecef;width:6px}
+QSplitter::handle:vertical {
+    background: transparent;
+    height: 6px;
+}
+#columnLockButton{padding:0;border-radius:0;min-height:0}
+QFrame#formulaInlineEditor,QFrame#serviceInlineEditor,QFrame#offerFormulaInlineEditor{background:#f5f8f9;border:1px solid #b8c8cf;border-radius:7px}
+QLabel#formulaResult,QLabel#offerFormulaResult{font-size:14px;font-weight:600}
+QFrame#topNavigation,QFrame#contextSidebar{background:#eef3f4;border-color:#d2dde2} QFrame#topNavigation{border-bottom:1px solid #d2dde2} QFrame#contextSidebar{border-right:1px solid #d2dde2}
+QLabel#topBrand,QLabel#contextTitle,QLabel#workspaceEyebrow{color:#1f5f8b;font-weight:700} QLabel#topBrand,QLabel#contextTitle{font-size:17px}
+QToolButton#topNavButton{min-height:30px;padding:4px 8px;border:1px solid transparent;border-radius:6px;background:transparent} QToolButton#topNavButton:hover,QToolButton#topNavButton:checked{background:#dcebed;border-color:#1f5f8b}
+QListWidget#contextProjects{background:#ffffff;border:1px solid #d2dde2;border-radius:7px;padding:4px} QListWidget#contextProjects::item{padding:9px 7px;margin:2px;border-radius:6px} QListWidget#contextProjects::item:selected{background:#dcebed;color:#294752;border-left:3px solid #1f5f8b}
+QFrame#workspaceInfo{background:#f5f8f9;border:1px solid #d2dde2;border-radius:10px} QPushButton#workspaceCard{text-align:left;min-height:92px;padding:12px 16px;font-size:14px}

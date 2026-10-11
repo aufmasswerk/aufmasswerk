@@ -1,0 +1,8 @@
+#!/bin/sh
+APPDIR="$(dirname "$(readlink -f "$0")")"
+PYTHON_VERSION=3.10
+export LD_LIBRARY_PATH="$APPDIR/usr/lib:$APPDIR/usr/lib/x86_64-linux-gnu:$APPDIR/usr/lib/python${PYTHON_VERSION}/site-packages/PySide6/Qt/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export PYTHONHOME="$APPDIR/usr"
+export PYTHONPATH="$APPDIR/usr/lib/python${PYTHON_VERSION}:$APPDIR/usr/lib/python${PYTHON_VERSION}/lib-dynload:$APPDIR/usr/lib/python${PYTHON_VERSION}/site-packages"
+export QT_PLUGIN_PATH="$APPDIR/usr/lib/python${PYTHON_VERSION}/site-packages/PySide6/Qt/plugins"
+exec "$APPDIR/usr/bin/python3.10" "$APPDIR/usr/share/aufmasswerk/main.py" "$@"

@@ -1,0 +1,48 @@
+QMainWindow,QWidget{background:#202224;color:#ece8e1;font-size:13px;font-family:"Inter","Noto Sans","DejaVu Sans",sans-serif}
+QScrollArea,QScrollArea>QWidget>QWidget{background:#202224;border:none}
+#nav{background:#2d2b2a;color:#ece8e1;border:none;font-size:14px;padding:14px 10px}
+#nav::item{padding:13px 11px;margin:3px 0;border-radius:8px}
+#nav::item:hover{background:#45403c;color:#ffffff}
+#nav::item:selected{background:#5a4a39;color:#ffc069;font-weight:600;border-left:3px solid #ffb347}
+#pageTitle{font-size:26px;font-weight:700;color:#ffc069;padding:3px 0 7px 0}
+#paymentStat{font-size:14px;padding:11px 15px;background:#2c2b2a;border:1px solid #48433f;border-radius:11px}
+#dashboardCard{border:1px solid #48433f;border-radius:13px;background:#2c2b2a;margin-top:14px;padding:20px 12px 12px 12px}
+#dashboardCard::title{color:#d8d0c7;background:#2c2b2a}
+#dashboardValue{font-size:22px;font-weight:700;color:#ffb347;padding:16px 8px;background:#2c2b2a}
+QGroupBox{font-weight:600;border:1px solid #48433f;border-radius:10px;margin-top:16px;padding:18px 10px 10px 10px;background:#2c2b2a}
+QGroupBox::title{subcontrol-origin:margin;subcontrol-position:top left;left:12px;padding:0 7px;background:#2c2b2a;color:#e6ded5}
+QPushButton{min-height:20px;padding:2px 12px;background:#363432;border:1px solid #5a544e;border-radius:6px;color:#f2eee8}
+QPushButton:hover{background:#4a4035;border-color:#ffb347;color:#ffffff}
+QPushButton:pressed{background:#654b2f;border-color:#ffc069}
+QPushButton:disabled{background:#292827;color:#77736e;border-color:#3b3936}
+QToolButton{background:#363432;border:1px solid #5a544e;border-radius:5px;padding:2px}
+QToolButton:hover{background:#4a4035;border-color:#ffb347}
+QToolButton:pressed{background:#654b2f;border-color:#ffc069}
+QToolButton:disabled{background:#292827;border-color:#3b3936}
+QLineEdit,QTextEdit,QComboBox,QDoubleSpinBox,QSpinBox,QDateEdit{padding:7px 9px;background:#2b2c2e;color:#f2eee8;border:1px solid #55514d;border-radius:6px;selection-background-color:#a76824;selection-color:#ffffff}
+QLineEdit:focus,QTextEdit:focus,QComboBox:focus,QDoubleSpinBox:focus,QSpinBox:focus,QDateEdit:focus{border:1px solid #ffb347}
+QComboBox QAbstractItemView{background:#302f2e;color:#f2eee8;border:1px solid #5a544e;selection-background-color:#8b5a25}
+QTableWidget{background:#292a2c;alternate-background-color:#2e2f31;color:#ebe7e1;gridline-color:#424345;border:1px solid #48494b;border-radius:7px;selection-background-color:#795226;selection-color:#ffffff}
+QTableWidget::item{padding:7px 8px;border:none}
+QTableWidget::item:hover{background:#3d3934}
+QHeaderView::section{background:#373533;color:#f0ebe4;padding:5px 8px;font-weight:600;border:none;border-right:1px solid #4d4945;border-bottom:1px solid #4d4945}
+QTableCornerButton::section{background:#373533;border:1px solid #4d4945}
+QSplitter::handle{background:#4a4744;width:6px}
+QScrollBar:vertical{background:#252628;width:12px;margin:0}
+QScrollBar::handle:vertical{background:#57534f;min-height:28px;border-radius:5px}
+QScrollBar:horizontal{background:#252628;height:12px;margin:0}
+QScrollBar::handle:horizontal{background:#57534f;min-width:28px;border-radius:5px}
+QScrollBar::add-line,QScrollBar::sub-line{width:0;height:0}
+QStatusBar{background:#292827;color:#c9c3bc;border-top:1px solid #403d3a}
+QToolTip{background:#3b3835;color:#ffffff;border:1px solid #ffb347;padding:5px}
+
+#columnLockButton{padding:0;border-radius:0;min-height:0}
+QFrame#formulaInlineEditor,QFrame#serviceInlineEditor,QFrame#offerFormulaInlineEditor{background:#302f2e;border:1px solid #66594c;border-radius:5px}
+QLabel#formulaResult,QLabel#offerFormulaResult{font-size:14px;font-weight:600}
+QFrame#topNavigation,QFrame#contextSidebar{background:#292827;border-color:#403d3a}
+QFrame#topNavigation{border-bottom:1px solid #403d3a} QFrame#contextSidebar{border-right:1px solid #403d3a}
+QLabel#topBrand,QLabel#contextTitle,QLabel#workspaceEyebrow{color:#ffb347;font-weight:700} QLabel#topBrand,QLabel#contextTitle{font-size:17px}
+QToolButton#topNavButton{min-height:30px;padding:4px 8px;border:1px solid transparent;border-radius:6px;background:transparent}
+QToolButton#topNavButton:hover,QToolButton#topNavButton:checked{background:#49443e;border-color:#ffb347}
+QListWidget#contextProjects{background:#242322;border:1px solid #4b4742;border-radius:7px;padding:4px} QListWidget#contextProjects::item{padding:9px 7px;margin:2px;border-radius:6px} QListWidget#contextProjects::item:selected{background:#514536;border-left:3px solid #ffb347}
+QFrame#workspaceInfo{background:#302f2e;border:1px solid #4b4742;border-radius:10px} QPushButton#workspaceCard{text-align:left;min-height:92px;padding:12px 16px;font-size:14px}

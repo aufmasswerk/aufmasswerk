@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect x="8" y="8" width="240" height="240" rx="54" fill="#1f5f8b"/>
+  <!-- Das A: zwei Schenkel wie ein aufgeklappter Zollstock -->
+  <path d="M62 196 L128 50 L194 196" fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Querbalken als Maßlinie mit Endstrichen -->
+  <line x1="92" y1="150" x2="164" y2="150" stroke="#f2b233" stroke-width="12" stroke-linecap="round"/>
+  <!-- Maßband unten -->
+  <rect x="40" y="212" width="176" height="18" rx="5" fill="#f2b233"/>
+  <g stroke="#1f5f8b" stroke-width="4" stroke-linecap="round">
+    <line x1="62" y1="213" x2="62" y2="223"/><line x1="84" y1="213" x2="84" y2="219"/>
+    <line x1="106" y1="213" x2="106" y2="223"/><line x1="128" y1="213" x2="128" y2="219"/>
+    <line x1="150" y1="213" x2="150" y2="223"/><line x1="172" y1="213" x2="172" y2="219"/>
+    <line x1="194" y1="213" x2="194" y2="223"/>
+  </g>
+</svg>
