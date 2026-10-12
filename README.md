@@ -2,6 +2,9 @@
 
 **Das Programm fürs Handwerk: Angebot, Aufmaß, Rechnung.**
 
+> **⬇ Programm herunterladen:** [zur aktuellen Version](https://github.com/aufmasswerk/aufmasswerk/releases/latest) – dort die Datei `aufmasswerk-…-x86_64.AppImage` anklicken.
+> Bitte nicht den grünen Knopf „Code“ benutzen: Er liefert nur den Quelltext, nicht das fertige Programm.
+
 Aufmaßwerk ist ein Büroprogramm für kleine Handwerksbetriebe, besonders im Ausbau. Es läuft vollständig auf dem eigenen Rechner, ohne Internet, ohne Benutzerkonto und ohne Abo. Entstanden ist es in einem Trockenbaubetrieb aus dem eigenen Bedarf.
 
 ![Wirtschaftlicher Stand eines Projekts](docs/bilder/11_wirtschaftlicher_stand.png)
@@ -28,11 +31,20 @@ Aufmaßwerk ist **keine Buchhaltung** und ersetzt keinen Steuerberater. Es gibt 
 
 Aufmaßwerk gibt es für **Linux (x86_64)** als AppImage. Getestet ist es unter Linux Mint 22.
 
-1. Die Datei `aufmasswerk-…-x86_64.AppImage` unter [Releases](../../releases) herunterladen.
+1. Die Datei `aufmasswerk-…-x86_64.AppImage` von der Seite der [aktuellen Version](https://github.com/aufmasswerk/aufmasswerk/releases/latest) herunterladen.
 2. Ausführbar machen: Rechtsklick → Eigenschaften → Berechtigungen → „Als Programm ausführbar“.
 3. Per Doppelklick starten.
 
 Die Daten liegen getrennt vom Programm im Ordner `~/.local/share/Aufmasswerk`. Ein Update bedeutet: die AppImage-Datei ersetzen.
+
+### Falls es nicht startet
+
+- **Beim Doppelklick passiert nichts (häufig unter Ubuntu):** AppImage-Dateien brauchen die Systembibliothek FUSE 2. Linux Mint bringt sie mit, neuere Ubuntu-Versionen nicht. Nachinstallieren im Terminal:
+  - Ubuntu 24.04 und neuer: `sudo apt install libfuse2t64`
+  - Ubuntu 22.04: `sudo apt install libfuse2`
+- **Ohne Nachinstallieren** startet das Programm auch so aus dem Terminal: `./aufmasswerk-…-x86_64.AppImage --appimage-extract-and-run`
+- **Es öffnet sich ein anderes Programm (zum Beispiel Gear Lever):** Manche Systeme fragen zuerst, ob das Programm ins Startmenü aufgenommen werden soll. Nach dem Bestätigen startet Aufmaßwerk über das Startmenü.
+- **Die Datei lässt sich nicht ausführen:** Prüfen, ob in den Eigenschaften der Datei das Häkchen „Als Programm ausführbar“ gesetzt ist.
 
 ## Anleitung
 
