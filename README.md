@@ -2,8 +2,13 @@
 
 **Das Programm fürs Handwerk: Angebot, Aufmaß, Rechnung.**
 
-> **⬇ Programm herunterladen:** [zur aktuellen Version](https://github.com/aufmasswerk/aufmasswerk/releases/latest) – dort die Datei `aufmasswerk-…-x86_64.AppImage` anklicken.
-> Bitte nicht den grünen Knopf „Code“ benutzen: Er liefert nur den Quelltext, nicht das fertige Programm.
+## ⬇ [Programm herunterladen](https://github.com/aufmasswerk/aufmasswerk/releases/latest)
+
+Auf der Seite, die sich öffnet, unter „Assets“ die Datei **`aufmasswerk-…-x86_64.AppImage`** anklicken.
+
+**Bitte nicht den grünen Knopf „Code“ benutzen.** Er liefert nur den Quelltext, nicht das fertige Programm.
+
+---
 
 Aufmaßwerk ist ein Büroprogramm für kleine Handwerksbetriebe, besonders im Ausbau. Es läuft vollständig auf dem eigenen Rechner, ohne Internet, ohne Benutzerkonto und ohne Abo. Entstanden ist es in einem Trockenbaubetrieb aus dem eigenen Bedarf.
 
